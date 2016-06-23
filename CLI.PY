@@ -1,5 +1,6 @@
 import serial,time
 import win32api, win32con
+import sys
 class IR:
     def __init__(self,com):
         self.ser=serial.Serial(com,57600)
@@ -131,5 +132,5 @@ class IR:
                     self.press_key(self.commands[index])
             except:
                 pass
-IR_Recv=IR('com4')
+IR_Recv=IR(sys.argv[1])
 IR_Recv.start()
