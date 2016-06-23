@@ -6,7 +6,8 @@ Works on windows , it requires the following python libraries:
   - win32api (pyWin32)
 
 usage : CLI.py comx
-where x is the com port number that the receiver circuit is connected to.
+
+Where x is the com port number that the receiver circuit is connected to.
 
 The PIC side is written in C with mikroC IDE.
 
