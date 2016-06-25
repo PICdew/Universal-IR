@@ -6,7 +6,7 @@ void INT_Init(){
 }
 
 void main() {
-  UART1_Init(57600);               // Initialize UART module at 57600 bps
+  UART1_Init(57600);               // Initialize UART module at 57600bps
   Delay_ms(100);                  // Wait for UART module to stabilize
   TRISB=0b00000001;
   INT_Init();                     //Initialize RB0 interrupt
