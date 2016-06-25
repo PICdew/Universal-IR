@@ -63,7 +63,7 @@ class IR:
         self.data=o.read().split('#\n')
         o.close()
     def check_valid(self,var):
-        if var[200:250]=='00000000000000000000000000000000000000000000000000' :
+        if var[200:250]=='00000000000000000000000000000000000000000000000000':
             return 0
         if var.find('N')<>-1:  #if found return index , else return -1
             return 0
